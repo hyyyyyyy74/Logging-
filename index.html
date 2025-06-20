@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord Logging Bot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      border-bottom: 1px solid #30363d;
+    }
+    h1 {
+      color: #58a6ff;
+    }
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 10px;
+    }
+    code {
+      background-color: #21262d;
+      padding: 5px 10px;
+      border-radius: 5px;
+      display: block;
+      margin: 10px 0;
+      white-space: pre-wrap;
+    }
+    a {
+      color: #58a6ff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Discord Logging Bot</h1>
+    <p>A simple bot to log warnings, kicks, and more to your Discord server</p>
+  </header>
+
+  <section>
+    <h2>🚀 Setup Instructions</h2>
+    <ol>
+      <li>Download the bot: <a href="/mnt/data/discord-logging-bot.zip">discord-logging-bot.zip</a></li>
+      <li>Extract the folder</li>
+      <li>Install dependencies:
+        <code>npm install</code>
+      </li>
+      <li>Set your bot token in <code>config.json</code></li>
+      <li>Run the bot:
+        <code>node index.js</code>
+      </li>
+    </ol>
+
+    <h2>🛠 Features</h2>
+    <ul>
+      <li>Warn users with <code>!warn</code></li>
+      <li>Logs actions to a <code>#staff-logs</code> channel</li>
+      <li>Stores logs in a <code>logs.json</code> file</li>
+      <li>Modular structure – easy to add more commands</li>
+    </ul>
+
+    <h2>📁 File Structure</h2>
+    <code>
+      discord-logging-bot/
+      ├── index.js
+      ├── config.json
+      ├── logs.json
+      └── commands/
+          └── warn.js
+    </code>
+
+    <p>Need help expanding the bot? Ask for more features like mute/ban, database logging, or a full admin panel!</p>
+  </section>
+</body>
+</html>
